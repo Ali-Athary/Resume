@@ -1,0 +1,15 @@
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+/* Make sure colors and backgrounds are kept in print */
+* {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+/* Hide UI-only elements on print */
+.no-print {
+  display: none !important;
+}
