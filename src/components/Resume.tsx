@@ -1,5 +1,6 @@
 import { Box, Typography, Divider, Stack } from "@mui/material";
 import myImage from "../assets/Profile_1.jpg";
+import Contacts from "./Contacts";
 
 const colors = {
   bg: "#E9EAF5",
@@ -55,7 +56,7 @@ export default function Resume() {
               left: 0,
             }}
           >
-            <Typography variant="h1" fontWeight={100}>
+            <Typography variant="h2" fontWeight={100}>
               Ali Athary
             </Typography>
           </Box>
@@ -104,6 +105,7 @@ export default function Resume() {
                 boxShadow: "0px 4px 20px #272635",
               }}
             />
+            <Contacts />
             <Box width={200} height={100} bgcolor={"red"} />
             <Box width={200} height={100} bgcolor={"red"} />
             <Box width={200} height={100} bgcolor={"red"} />
