@@ -1,4 +1,5 @@
 import { Box, Typography, Divider, Stack } from "@mui/material";
+import myImage from "../assets/Profile_1.jpg";
 
 export default function Resume() {
   return (
@@ -12,12 +13,15 @@ export default function Resume() {
       }}
     >
       <Box
-        bgcolor="blue"
-        width="100%"
-        height={120}
-        top={40}
+        bgcolor="#B1E5F2"
         position={"absolute"}
-        zIndex={10}
+        sx={{
+          width: "100%",
+          height: 120,
+          top: 50,
+          zIndex: 10,
+          boxShadow: "0px 4px 20px #00000088",
+        }}
       ></Box>
       <Box
         sx={{
@@ -51,10 +55,16 @@ export default function Resume() {
             }}
           >
             <Box
-              width={160}
-              height={160}
-              bgcolor={"white"}
-              sx={{ zIndex: 20 }}
+              component="img"
+              src={myImage}
+              alt="resume-img"
+              sx={{
+                width: 180,
+                height: 180,
+                zIndex: 20,
+                borderRadius: 40,
+                boxShadow: "0px 4px 20px #272635",
+              }}
             />
             <Box width={200} height={100} bgcolor={"red"} />
             <Box width={200} height={100} bgcolor={"red"} />
