@@ -1,6 +1,12 @@
 import { Box, Typography, Divider, Stack } from "@mui/material";
 import myImage from "../assets/Profile_1.jpg";
 
+const colors = {
+  bg: "#E9EAF5",
+  panel: "#272635",
+  banner: "#2c5070",
+};
+
 export default function Resume() {
   return (
     <Box
@@ -9,11 +15,11 @@ export default function Resume() {
         height: "100vh",
         position: "relative",
         fontFamily: "Inter, Arial, sans-serif",
-        bgcolor: "#E8E9F3",
+        bgcolor: colors.bg,
       }}
     >
       <Box
-        bgcolor="#B1E5F2"
+        bgcolor={colors.banner}
         position={"absolute"}
         sx={{
           width: "100%",
@@ -22,7 +28,39 @@ export default function Resume() {
           zIndex: 10,
           boxShadow: "0px 4px 20px #00000088",
         }}
-      ></Box>
+      >
+        <Box
+          sx={{
+            position: "relative",
+            mt: "20px",
+            ml: "300px",
+            width: 200,
+            height: 80,
+            color: "white",
+          }}
+        >
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              right: 0,
+            }}
+          >
+            <Typography variant="h1">علی اطهری</Typography>
+          </Box>
+          <Box
+            sx={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+            }}
+          >
+            <Typography variant="h1" fontWeight={100}>
+              Ali Athary
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
       <Box
         sx={{
           display: "flex",
@@ -42,7 +80,7 @@ export default function Resume() {
           sx={{
             width: "250px",
             height: "100%",
-            bgcolor: "#272635",
+            bgcolor: colors.panel,
           }}
         >
           <Stack
