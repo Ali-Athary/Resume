@@ -1,37 +1,51 @@
-import { Box, Typography, Divider } from "@mui/material";
-import Grid from "@mui/material/Grid";
+import { Box, Typography, Divider, Stack } from "@mui/material";
 
 export default function Resume() {
   return (
     <Box
       sx={{
-        p: 4,
-        maxWidth: 900,
-        mx: "auto",
+        maxWidth: "70.695553vh",
+        height: "100vh",
+        position: "relative",
         fontFamily: "Inter, Arial, sans-serif",
       }}
     >
-      <Typography variant="h4" gutterBottom>
-        Ali Athary
-      </Typography>
-      <Divider sx={{ mb: 2 }} />
-      <Grid container spacing={2}>
-        <Grid size={6}>
-          <Typography variant="h6">Experience</Typography>
-          <Typography fontWeight={600}>
-            Backend Developer Intern — 2023
-          </Typography>
-          <Typography variant="body2">
-            Worked on Spring Boot services, Kafka, Oracle…
-          </Typography>
-        </Grid>
-        <Grid size={6}>
-          <Typography variant="h6">Skills</Typography>
-          <Typography variant="body2">
-            React, MUI, Spring Boot, Kafka, Oracle
-          </Typography>
-        </Grid>
-      </Grid>
+      <Box
+        bgcolor="blue"
+        width="50%"
+        height={100}
+        top={20}
+        position={"absolute"}
+        zIndex={10}
+      ></Box>
+      <Box
+        sx={{
+          display: "flex",
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <Box
+          sx={{
+            flex: 1,
+            display: "flex",
+            bgcolor: "lightblue",
+          }}
+        >
+          Middle Content
+        </Box>
+
+        {/* Right (fixed width or flexible) */}
+        <Box
+          sx={{
+            width: "250px", // fixed width, or use flex if you want
+            height: "100%",
+            bgcolor: "lightgreen",
+          }}
+        >
+          Right Side
+        </Box>
+      </Box>
     </Box>
   );
 }

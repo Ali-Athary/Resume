@@ -1,6 +1,11 @@
 @page {
   size: A4;
-  margin: 12mm;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* Make sure colors and backgrounds are kept in print */
