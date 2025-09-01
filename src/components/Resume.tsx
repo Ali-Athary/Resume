@@ -47,7 +47,9 @@ export default function Resume() {
               right: 0,
             }}
           >
-            <Typography variant="h1">علی اطهری</Typography>
+            <Typography fontFamily="BTitr" variant="h1">
+              علی اطهری
+            </Typography>
           </Box>
           <Box
             sx={{
@@ -56,7 +58,7 @@ export default function Resume() {
               left: 0,
             }}
           >
-            <Typography variant="h2" fontWeight={100}>
+            <Typography fontFamily="Arial" variant="h2" fontWeight={100}>
               Ali Athary
             </Typography>
           </Box>

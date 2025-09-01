@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "B Nazanin";
+  font-family: "BNazanin";
   src: local("B Nazanin"), local("BNazanin"),
     url("./assets/fonts/BNazanin/BNazanin.woff2") format("woff2"),
     url("./assets/fonts/BNazanin/BNazanin.woff") format("woff"),
@@ -9,11 +9,25 @@
 }
 
 @font-face {
-  font-family: "B Nazanin";
+  font-family: "BNazanin";
   src: local("B Nazanin Bold"), local("BNazanin-Bold"),
     url("./assets/fonts/BNazanin/BNaznnBd.woff2") format("woff2"),
     url("./assets/fonts/BNazanin/BNaznnBd.woff") format("woff"),
     url("./assets/fonts/BNazanin/BNaznnBd.ttf") format("truetype");
   font-weight: 700;
   font-stretch: normal;
+}
+
+@font-face {
+  font-family: "BYekan";
+  src: url("./assets/fonts/BYekan/BYekan.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BTitr";
+  src: url("./assets/fonts/Btitr/BTITRBD.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }

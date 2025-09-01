@@ -14,9 +14,15 @@ const contacts = [
 
 const Contacts = () => {
   return (
-    <Stack direction="column" spacing={1} sx={{ p: 10, color: "white" }}>
+    <Stack direction="column" spacing={1} sx={{ px: 10, py: 4 }}>
       {contacts.map((c) => (
-        <Typography variant="body1">{c.text}</Typography>
+        <Typography
+          fontFamily="Arial"
+          variant="body1"
+          color="text.panelPrimary"
+        >
+          {c.text}
+        </Typography>
       ))}
     </Stack>
   );
