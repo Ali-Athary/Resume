@@ -15,6 +15,14 @@ const typography: TypographyVariantsOptions = {
     fontSize: "1.5rem",
     fontWeight: 600,
   },
+  h3: {
+    fontSize: "1.3rem",
+    fontWeight: 500,
+  },
+  h4: {
+    fontSize: "1.2rem",
+    fontWeight: 300,
+  },
   body1: {
     fontSize: "1rem",
     lineHeight: 1.5,
@@ -32,9 +40,15 @@ const typography: TypographyVariantsOptions = {
 const theme = createTheme({
   palette: {
     text: {
-      primary: "#010203",
+      primary: "#010203ff",
       secondary: "#373938ff",
       panelPrimary: "#fff8efff",
+      bannerPrimary: "#ffffffff",
+    },
+    background: {
+      page: "#E9EAF5ff",
+      panel: "#272635ff",
+      banner: "#2c5070ff",
     },
   },
   typography: typography,
