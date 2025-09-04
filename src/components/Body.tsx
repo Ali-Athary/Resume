@@ -16,12 +16,24 @@ const Body = () => {
         spacing={2}
         sx={{ width: "100%", direction: "rtl", textAlign: "justify" }}
       >
-        <Typography variant="h4">درباره من</Typography>
-        <Typography>{resumeData.aboutMe}</Typography>
-        <Box sx={{ width: "100%", height: 100, bgcolor: "red" }}></Box>
-        <Box sx={{ width: "100%", height: 100, bgcolor: "red" }}></Box>
-        <Box sx={{ width: "100%", height: 100, bgcolor: "red" }}></Box>
-        <Box sx={{ width: "100%", height: 100, bgcolor: "red" }}></Box>
+        <Stack>
+          <Typography variant="h4">درباره من</Typography>
+          <Typography>{resumeData.aboutMe}</Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h4">تجربه های کاری</Typography>
+          {resumeData.workExperiences.map((we) => (
+            <Stack>
+              <Typography variant="h4">{we.title}</Typography>
+              {we.positions.map((p) => (
+                <Stack>
+                  <Typography variant="h4">{p.title}</Typography>
+                  <Typography>{p.time}</Typography>
+                </Stack>
+              ))}
+            </Stack>
+          ))}
+        </Stack>
       </Stack>
     </Box>
   );
