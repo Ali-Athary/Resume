@@ -1,7 +1,8 @@
-import { Box, Typography, Divider, Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import myImage from "../assets/Profile_1.jpg";
 import Contacts from "./Contacts";
 import Banner from "./Banner";
+import Body from "./Body";
 
 export default function Resume() {
   return (
@@ -22,14 +23,8 @@ export default function Resume() {
           height: "100%",
         }}
       >
-        <Box
-          sx={{
-            flex: 1,
-            display: "flex",
-          }}
-        >
-          Middle Content
-        </Box>
+        <Body />
+
         <Box
           sx={{
             width: "250px",
