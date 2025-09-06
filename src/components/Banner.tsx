@@ -1,4 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
+import resumeData from "../data/ali-resume.json";
 
 const Banner = () => {
   return (
@@ -22,42 +23,15 @@ const Banner = () => {
           alignItems: "center",
         }}
       >
-        <Box width={260}></Box>
-        <Box
-          sx={{
-            position: "relative",
-            width: 200,
-            height: 80,
-          }}
-        >
-          <Box
-            sx={{
-              position: "absolute",
-              top: 0,
-              right: 0,
-            }}
-          >
-            <Typography fontFamily="BTitr" variant="h1">
-              علی اطهری
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-            }}
-          >
-            <Typography fontFamily="Arial" variant="h2" fontWeight={100}>
-              Ali Athary
-            </Typography>
-          </Box>
-        </Box>
-        <Box sx={{ px: 10 }}>
-          <Typography fontFamily="BTitr" variant="h4">
-            برنامه نویس بک‌اند
+        <Box width={270}></Box>
+        <Stack spacing={1} sx={{ alignItems: "end" }}>
+          <Typography fontFamily="BTitr" variant="h1">
+            {resumeData.name}
           </Typography>
-        </Box>
+          <Typography fontFamily="BTitr" variant="h3">
+            {resumeData.title}
+          </Typography>
+        </Stack>
       </Stack>
     </Box>
   );

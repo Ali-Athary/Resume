@@ -13,15 +13,15 @@ const Body = () => {
     >
       <Stack
         direction="column"
-        spacing={2}
+        spacing={3}
         sx={{ width: "100%", direction: "rtl", textAlign: "justify" }}
       >
-        <Stack>
-          <Typography variant="h4">درباره من</Typography>
+        <Stack spacing={1}>
+          <Typography variant="h3">درباره من</Typography>
           <Typography>{resumeData.aboutMe}</Typography>
         </Stack>
-        <Stack>
-          <Typography variant="h4">تجربه های کاری</Typography>
+        <Stack spacing={1}>
+          <Typography variant="h3">تجربه های کاری</Typography>
           {resumeData.workExperiences.map((we) => (
             <Stack>
               <Typography variant="h4">{we.title}</Typography>
@@ -31,6 +31,15 @@ const Body = () => {
                   <Typography>{p.time}</Typography>
                 </Stack>
               ))}
+            </Stack>
+          ))}
+        </Stack>
+        <Stack spacing={1}>
+          <Typography variant="h3">سوابق تحصیلی</Typography>
+          {resumeData.educaitionExperiences.map((e) => (
+            <Stack>
+              <Typography variant="h4">{e.title}</Typography>
+              <Typography>{e.time}</Typography>
             </Stack>
           ))}
         </Stack>

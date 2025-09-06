@@ -18,6 +18,7 @@ const typography: TypographyVariantsOptions = {
   h3: {
     fontSize: "1.3rem",
     fontWeight: 500,
+    fontFamily: "BTitr",
   },
   h4: {
     fontSize: "1.2rem",
@@ -46,7 +47,7 @@ const theme = createTheme({
       bannerPrimary: "#ffffffff",
     },
     background: {
-      page: "#E9EAF5ff",
+      page: "#f9faffff",
       panel: "#272635ff",
       banner: "#2c5070ff",
     },
