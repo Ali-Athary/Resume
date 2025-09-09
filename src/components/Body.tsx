@@ -28,7 +28,10 @@ const Body = () => {
               {we.positions.map((p) => (
                 <Stack>
                   <Typography variant="h4">{p.title}</Typography>
-                  <Typography>{p.time}</Typography>
+                  <Typography variant="subtitle1" color="text.secondary">
+                    {p.time}
+                  </Typography>
+                  <Typography>{p.description}</Typography>
                 </Stack>
               ))}
             </Stack>

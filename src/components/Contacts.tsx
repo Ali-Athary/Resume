@@ -14,12 +14,15 @@ const contacts = [
 
 const Contacts = () => {
   return (
-    <Stack direction="column" spacing={1} sx={{ px: 10, py: 4 }}>
+    <Stack direction="column" spacing={1} sx={{ py: 4 }}>
       {contacts.map((c) => (
         <Typography
           fontFamily="Arial"
           variant="body1"
-          color="text.panelPrimary"
+          sx={{
+            wordBreak: "break-all",
+            overflowWrap: "break-word",
+          }}
         >
           {c.text}
         </Typography>

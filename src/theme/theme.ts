@@ -28,13 +28,8 @@ const typography: TypographyVariantsOptions = {
     fontSize: "1rem",
     lineHeight: 1.5,
   },
-  body2: {
-    fontSize: "0.875rem",
-    color: "#666",
-  },
-  button: {
-    textTransform: "none",
-    fontWeight: 600,
+  subtitle1: {
+    fontSize: "0.7rem",
   },
 };
 
@@ -42,7 +37,7 @@ const theme = createTheme({
   palette: {
     text: {
       primary: "#010203ff",
-      secondary: "#373938ff",
+      secondary: "#4a4d4bff",
       panelPrimary: "#fff8efff",
       bannerPrimary: "#ffffffff",
     },

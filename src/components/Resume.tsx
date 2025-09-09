@@ -3,6 +3,7 @@ import myImage from "../assets/Profile_1.jpg";
 import Contacts from "./Contacts";
 import Banner from "./Banner";
 import Body from "./Body";
+import Languages from "./Languages";
 
 export default function Resume() {
   return (
@@ -24,18 +25,16 @@ export default function Resume() {
         }}
       >
         <Body />
-
         <Box
           sx={{
             width: "250px",
             height: "100%",
             bgcolor: "background.panel",
+            color: "text.panelPrimary",
           }}
         >
           <Stack
             mt="20px"
-            direction="column"
-            spacing={2}
             sx={{
               justifyContent: "flex-start",
               alignItems: "center",
@@ -53,11 +52,10 @@ export default function Resume() {
                 boxShadow: "0px 4px 20px #272635",
               }}
             />
-            <Contacts />
-            <Box width={200} height={100} bgcolor={"red"} />
-            <Box width={200} height={100} bgcolor={"red"} />
-            <Box width={200} height={100} bgcolor={"red"} />
-            <Box width={200} height={100} bgcolor={"red"} />
+            <Stack spacing={2} sx={{ width: "100%", px: 4 }}>
+              <Contacts />
+              <Languages />
+            </Stack>
           </Stack>
         </Box>
       </Box>
