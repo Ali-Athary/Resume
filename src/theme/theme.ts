@@ -12,17 +12,17 @@ const typography: TypographyVariantsOptions = {
     lineHeight: 1.2,
   },
   h2: {
-    fontSize: "1.5rem",
-    fontWeight: 600,
-  },
-  h3: {
     fontSize: "1.3rem",
     fontWeight: 500,
     fontFamily: "BTitr",
   },
+  h3: {
+    fontSize: "1.3rem",
+    fontWeight: 600,
+  },
   h4: {
-    fontSize: "1.2rem",
-    fontWeight: 300,
+    fontSize: "1.1rem",
+    fontWeight: 560,
   },
   body1: {
     fontSize: "1rem",
@@ -37,7 +37,8 @@ const theme = createTheme({
   palette: {
     text: {
       primary: "#010203ff",
-      secondary: "#4a4d4bff",
+      secondary: "#666967ff",
+      tertiary: "#abababff",
       panelPrimary: "#fff8efff",
       bannerPrimary: "#ffffffff",
     },
