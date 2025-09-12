@@ -23,7 +23,7 @@ const Body = () => {
         <Stack spacing={1}>
           <Typography variant="h2">تجربه های کاری</Typography>
           {resumeData.workExperiences.map((we) => (
-            <Stack sx={{ pr: 1 }}>
+            <Stack spacing={1} sx={{ pr: 1 }}>
               <Typography variant="h3">{we.title}</Typography>
               {we.positions.map((p) => (
                 <Stack direction="row">
@@ -45,13 +45,16 @@ const Body = () => {
                       }}
                     />
                   </Stack>
-                  <Stack>
+                  <Stack spacing={0.5}>
                     <Stack direction="row" alignItems="center">
                       <Typography variant="h4">{p.title}</Typography>
+                      <Typography
+                        variant="subtitle1"
+                        sx={{ mr: 1, color: "text.secondary" }}
+                      >
+                        {p.time}
+                      </Typography>
                     </Stack>
-                    <Typography variant="subtitle1" color="text.secondary">
-                      {p.time}
-                    </Typography>
                     <Typography>{p.description}</Typography>
                   </Stack>
                 </Stack>
