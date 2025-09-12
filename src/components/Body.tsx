@@ -60,7 +60,7 @@ const Body = () => {
           ))}
         </Stack>
         <Stack spacing={1}>
-          <Typography variant="h3">سوابق تحصیلی</Typography>
+          <Typography variant="h3">دوره های آموزشی</Typography>
           {resumeData.courses.map((e) => (
             <Stack>
               <Typography variant="h4">{e.title}</Typography>

@@ -17,7 +17,8 @@ const Education = () => {
         {resumeData.education.map((e) => (
           <Stack>
             <Typography variant="h4">{e.title}</Typography>
-            <Typography>{e.time}</Typography>
+            <Typography variant="body1">{e.description}</Typography>
+            <Typography variant="body2">{e.time}</Typography>
           </Stack>
         ))}
       </Stack>

@@ -53,7 +53,7 @@ export default function Resume() {
                 boxShadow: "0px 4px 20px #272635",
               }}
             />
-            <Stack spacing={4} sx={{ width: "100%", px: 4 }}>
+            <Stack spacing={4} sx={{ width: "100%", px: 2.4 }}>
               <Contacts />
               <Box
                 sx={{ width: "100%", height: 3, bgcolor: "background.banner" }}

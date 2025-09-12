@@ -7,22 +7,23 @@ const typography: TypographyVariantsOptions = {
   fontFamily: "'B Nazanin','Roboto', sans-serif",
 
   h1: {
-    fontSize: "2rem",
+    fontSize: "1.8rem",
     fontWeight: 700,
     lineHeight: 1.2,
   },
   h2: {
-    fontSize: "1.3rem",
+    fontSize: "1.2rem",
     fontWeight: 500,
     fontFamily: "BTitr",
   },
   h3: {
-    fontSize: "1.3rem",
+    fontSize: "1rem",
     fontWeight: 600,
+    fontFamily: "BTitr",
   },
   h4: {
     fontSize: "1.1rem",
-    fontWeight: 560,
+    fontWeight: 550,
   },
   body1: {
     fontSize: "1rem",
@@ -36,7 +37,7 @@ const typography: TypographyVariantsOptions = {
 const theme = createTheme({
   palette: {
     text: {
-      primary: "#010203ff",
+      primary: "#050a0fff",
       secondary: "#666967ff",
       tertiary: "#abababff",
       panelPrimary: "#fff8efff",

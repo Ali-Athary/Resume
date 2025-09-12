@@ -1,14 +1,27 @@
 import { Stack, Typography } from "@mui/material";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import resumeData from "../data/ali-resume.json";
+import type { ReactNode } from "react";
 
-const contacts = [
+interface Contact {
+  text: string;
+  icon: ReactNode;
+}
+
+const contacts: Contact[] = [
   {
-    text: "+989038426825",
+    text: resumeData.contacts.phone,
+    icon: <PhoneIcon />,
   },
   {
-    text: "ali.athary.ce@gmail.com",
+    text: resumeData.contacts.email,
+    icon: <EmailIcon />,
   },
   {
-    text: "https://www.linkedin.com/in/ali-athary-7b7a2a225/",
+    text: resumeData.contacts.linkedin,
+    icon: <LinkedInIcon />,
   },
 ];
 
@@ -20,18 +33,22 @@ const Contacts = () => {
       </Typography>
       <Stack direction="column" spacing={1}>
         {contacts.map((c) => (
-          <Typography
-            fontFamily="Arial"
-            variant="body1"
-            sx={{
-              direction: "ltr",
-              textAlign: "end",
-              wordBreak: "break-all",
-              overflowWrap: "break-word",
-            }}
-          >
-            {c.text}
-          </Typography>
+          <Stack direction="row" sx={{ alignItems: "center" }}>
+            {c.icon}
+            <Typography
+              fontFamily="Arial"
+              variant="body1"
+              sx={{
+                mr: 1,
+                direction: "ltr",
+                textAlign: "end",
+                wordBreak: "break-all",
+                overflowWrap: "break-word",
+              }}
+            >
+              {c.text}
+            </Typography>
+          </Stack>
         ))}
       </Stack>
     </Stack>
