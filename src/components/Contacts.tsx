@@ -14,19 +14,26 @@ const contacts = [
 
 const Contacts = () => {
   return (
-    <Stack direction="column" spacing={1} sx={{ py: 4 }}>
-      {contacts.map((c) => (
-        <Typography
-          fontFamily="Arial"
-          variant="body1"
-          sx={{
-            wordBreak: "break-all",
-            overflowWrap: "break-word",
-          }}
-        >
-          {c.text}
-        </Typography>
-      ))}
+    <Stack spacing={3} sx={{ direction: "rtl", pt: 4 }}>
+      <Typography fontFamily="Arial" variant="h4" textAlign="center">
+        تماس با من
+      </Typography>
+      <Stack direction="column" spacing={1}>
+        {contacts.map((c) => (
+          <Typography
+            fontFamily="Arial"
+            variant="body1"
+            sx={{
+              direction: "ltr",
+              textAlign: "end",
+              wordBreak: "break-all",
+              overflowWrap: "break-word",
+            }}
+          >
+            {c.text}
+          </Typography>
+        ))}
+      </Stack>
     </Stack>
   );
 };

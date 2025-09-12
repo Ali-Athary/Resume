@@ -4,6 +4,7 @@ import Contacts from "./Contacts";
 import Banner from "./Banner";
 import Body from "./Body";
 import Languages from "./Languages";
+import Education from "./Education";
 
 export default function Resume() {
   return (
@@ -52,9 +53,16 @@ export default function Resume() {
                 boxShadow: "0px 4px 20px #272635",
               }}
             />
-            <Stack spacing={2} sx={{ width: "100%", px: 4 }}>
+            <Stack spacing={4} sx={{ width: "100%", px: 4 }}>
               <Contacts />
+              <Box
+                sx={{ width: "100%", height: 3, bgcolor: "background.banner" }}
+              />
               <Languages />
+              <Box
+                sx={{ width: "100%", height: 3, bgcolor: "background.banner" }}
+              />
+              <Education />
             </Stack>
           </Stack>
         </Box>

@@ -7,7 +7,7 @@ const Body = () => {
       sx={{
         flex: 1,
         display: "flex",
-        pt: 30,
+        pt: 25,
         px: 3,
       }}
     >
@@ -61,7 +61,7 @@ const Body = () => {
         </Stack>
         <Stack spacing={1}>
           <Typography variant="h3">سوابق تحصیلی</Typography>
-          {resumeData.educaitionExperiences.map((e) => (
+          {resumeData.courses.map((e) => (
             <Stack>
               <Typography variant="h4">{e.title}</Typography>
               <Typography>{e.time}</Typography>
