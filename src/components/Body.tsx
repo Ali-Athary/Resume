@@ -64,12 +64,29 @@ const Body = () => {
         </Stack>
         <Stack spacing={1}>
           <Typography variant="h3">دوره های آموزشی</Typography>
-          {resumeData.courses.map((e) => (
-            <Stack>
-              <Typography variant="h4">{e.title}</Typography>
-              <Typography>{e.time}</Typography>
-            </Stack>
-          ))}
+          <Stack sx={{ pr: 1 }}>
+            {resumeData.courses.map((e) => (
+              <Stack direction="row" sx={{ alignItems: "center" }}>
+                <Box
+                  sx={{
+                    width: 7,
+                    height: 7,
+                    borderRadius: 20,
+                    bgcolor: "text.secondary",
+                  }}
+                />
+                <Typography variant="body1" sx={{ mr: 1 }}>
+                  {e.title}
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  sx={{ mr: 1, color: "text.secondary" }}
+                >
+                  {e.time}
+                </Typography>
+              </Stack>
+            ))}
+          </Stack>
         </Stack>
       </Stack>
     </Box>
