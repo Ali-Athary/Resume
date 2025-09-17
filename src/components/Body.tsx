@@ -1,5 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import resumeData from "../data/ali-resume.json";
+import Skills from "./Skills";
 
 const Body = () => {
   return (
@@ -88,6 +89,7 @@ const Body = () => {
             ))}
           </Stack>
         </Stack>
+        <Skills />
       </Stack>
     </Box>
   );
