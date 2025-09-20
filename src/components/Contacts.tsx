@@ -2,6 +2,7 @@ import { Stack, Typography } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LocationPinIcon from "@mui/icons-material/LocationPin";
 import resumeData from "../data/ali-resume.json";
 import type { ReactNode } from "react";
 
@@ -22,6 +23,10 @@ const contacts: Contact[] = [
   {
     text: resumeData.contacts.linkedin,
     icon: <LinkedInIcon />,
+  },
+  {
+    text: resumeData.contacts.city,
+    icon: <LocationPinIcon />,
   },
 ];
 

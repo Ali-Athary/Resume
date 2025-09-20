@@ -5,6 +5,7 @@ import Banner from "./Banner";
 import Body from "./Body";
 import Languages from "./Languages";
 import Education from "./Education";
+import ProgramingLanguages from "./ProgramingLanguages.tsx";
 
 export default function Resume() {
   return (
@@ -58,11 +59,15 @@ export default function Resume() {
               <Box
                 sx={{ width: "100%", height: 3, bgcolor: "background.banner" }}
               />
+              <Education />
+              <Box
+                sx={{ width: "100%", height: 3, bgcolor: "background.banner" }}
+              />
               <Languages />
               <Box
                 sx={{ width: "100%", height: 3, bgcolor: "background.banner" }}
               />
-              <Education />
+              <ProgramingLanguages />
             </Stack>
           </Stack>
         </Box>

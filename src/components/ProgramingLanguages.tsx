@@ -1,14 +1,18 @@
 import { Box, Chip, Stack, Typography } from "@mui/material";
 
 const skillsData = [
-  { title: "Spring Boot", value: 200 },
-  { title: "SQL", value: 120 },
+  { title: "Java", value: 200 },
+  { title: "React", value: 140 },
+  { title: "C#", value: 100 },
+  { title: "Python", value: 80 },
 ];
 
-const Skills = () => {
+const ProgramingLanguages = () => {
   return (
-    <Stack spacing={1}>
-      <Typography variant="h3">مهارت ها</Typography>
+    <Stack spacing={3} sx={{ direction: "rtl" }}>
+      <Typography fontFamily="Arial" variant="h4" textAlign="center">
+        زبان برنامه نویسی
+      </Typography>
       <Box
         sx={{
           display: "flex",
@@ -22,8 +26,9 @@ const Skills = () => {
           <Chip
             label={skill.title}
             sx={{
+              direction: "ltr",
               width: skill.value,
-              bgcolor: "background.page",
+              color: "text.panelPrimary",
               borderColor: "text.tertiary",
               borderWidth: 1,
               borderStyle: "solid",
@@ -35,4 +40,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default ProgramingLanguages;
